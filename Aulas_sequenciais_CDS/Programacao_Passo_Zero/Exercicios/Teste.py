@@ -1,4 +1,9 @@
-qtade_real = float(input('Digite a quantidade de reais: R$ '))
-vl_dolar = 5.30
-conv_dol_real = qtade_real * vl_dolar
-print(f'R$ {qtade_real:.2f} corresponde a U$ {conv_dol_real:.2f}')
+print()
+while True:
+    num = int(input('Digite um número: '))
+    if num < 0:
+        break
+    for cont in range(1, 11):
+        print(f'{num} X {cont + 1} = {num * cont}')
+print('Número negativo não permitido!')
+print()
